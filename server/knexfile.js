@@ -5,13 +5,12 @@
  */
 require("dotenv").config();
 module.exports = {
-
   development: {
-    client: 'postgresql',
+    client: "postgresql",
     connection: {
       database: process.env.DATABASE,
-      user:     process.env.USER,
-      password: process.env.PASSWORD
+      user: process.env.USER,
+      password: process.env.PASSWORD,
     },
     pool: {
       min: 2,
@@ -20,7 +19,23 @@ module.exports = {
     migrations: {
       tableName: "new_knex_migrations",
     },
-    useNullAsDefault: true
+    useNullAsDefault: true,
+  },
+  production: {
+    client: "postgresql",
+    connection: {
+      database: process.env.DATABASE,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+    },
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      tableName: "new_knex_migrations",
+    },
+    useNullAsDefault: true,
   },
 };
 
