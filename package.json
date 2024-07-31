@@ -1,0 +1,18 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_client": "cd client && npm run start",
+    "start_server": "cd server && npm run dev",
+    "start": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,green\" -p \"[{name}]\" \"npm run start_server arg\" \"npm run start_client arg\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "passport-local": "^1.0.0"
+  }
+}

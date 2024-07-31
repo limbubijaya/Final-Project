@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bricks+Sans:wght@400;700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+  border: 1px solid gray;
+  margin: 2px;
+}
+input[type="submit"] {
+  border: 1px solid gray;
+  padding:  0 10px;
+  margin-top: 5px;
+}
+#bg_feed_img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

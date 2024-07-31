@@ -1,5 +1,12 @@
+/node_modules/
+
 /client/node_modules/
 /client/.env
 
 /server/node_modules/
 /server/.env
+
+/server/client_secret_994377185964-oei0916uvuhtpb1sbn3gqtp68gmb0lc4.apps.googleusercontent.com.json
+
+
+/client/build/
