@@ -88,7 +88,7 @@ function Login() {
 
           <div className="login-google">
             <div>
-              <Link to="http://localhost:8080/api/users/auth/google">
+              <Link to="http://13.250.98.203/api/users/auth/google">
                 Google Login
               </Link>
             </div>

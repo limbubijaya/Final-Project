@@ -12,7 +12,7 @@ axios.defaults.headers.get["Access-Control-Allow-Origin"] = "*";
 axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
 axios.defaults.baseURL =
-  process.env.REACT_ENV_BACKEND_URL || "http://localhost:8080";
+  process.env.REACT_ENV_BACKEND_URL || "http://13.250.98.203";
 
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded"; //content type when you submit what to send ? [datatype of FormData]

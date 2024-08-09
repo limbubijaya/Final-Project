@@ -18,12 +18,13 @@ const PORT = process.env.PORT || 8080;
 //   })
 // );
 
+// {
+//   // credentials: true,
+//   // origin: process.env.CORS_ORIGIN,
+//   // methods: ["GET", "POST"],
+// }
 app.use(
-  cors({
-    credentials: true,
-    origin: process.env.CORS_ORIGIN,
-    methods: ["GET", "POST"],
-  })
+  cors()
 );
 
 app.use(
